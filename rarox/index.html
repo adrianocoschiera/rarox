@@ -1187,7 +1187,7 @@ function buildSouth(add){const A=AREAS.city,wl=lam('#FFFFFF');
   for(let x=-60;x<=60;x+=10)add(x,128+rnd(6));
 }
 
-function buildDistricts(add){buildOrto();buildMetroGate();areaWrap('metro',()=>{buildMetro();buildRadura();});areaWrap('mall',buildMall);buildAutodromo();areaWrap('pista',buildPista);areaWrap('egitto',buildEgitto);areaWrap('piramide',buildPiramide);buildBusStop();buildCaaOutside();areaWrap('caa',buildCaa);areaWrap('magia',buildMagia);areaWrap('wlab',buildWlab);buildCivicaOutside();areaWrap('civica',buildCivica);areaWrap('cucina',buildCucina);buildOspedaleOutside();areaWrap('ospedale',buildOspedale);buildAlbertoOutside();ERAS.forEach(E=>areaWrap(E.area,()=>buildEra(E)));buildV33Outside();areaWrap('cinema',buildCinema);areaWrap('arena',buildHeroArena);areaWrap('fantasmi',buildFantasmi);areaWrap('stelle',buildStelle);areaWrap('orbita',buildOrbita);areaWrap('luna',buildLuna);areaWrap('marte',buildMarte);buildV34Outside();buildCoins();areaWrap('torre',buildTorre);areaWrap('creature',buildCreature);areaWrap('plancia',buildPlancia);areaWrap('orologio',buildOrologio);areaWrap('radici',buildRadici);areaWrap('cellula',buildCellula);areaWrap('sogno',buildSogno);areaWrap('cioccolato',buildCioccolato);buildUfficioOutside();areaWrap('ufficio',buildUfficio);addOlga();buildV37Outside();areaWrap('musica',buildMusica);areaWrap('basket',buildBasket);buildV41Outside();areaWrap('brigata',buildBrigata);areaWrap('calma',buildCalma);areaWrap('negozio',buildNegozio);buildV42Outside();areaWrap('cantiere',buildCantiere);buildV43Outside();areaWrap('invictus',buildInvictus);buildV44Outside();areaWrap('episodiarte',buildEpisodiarte);areaWrap('epcastello',buildEpCastello);buildV51();areaWrap('deejay',buildDeejay);areaWrap('campeggio',buildCampeggio);{const J=S.q&&S.q.pj;if(J&&J.day===S.day&&PJOBS[J.i]&&PJOBS[J.i].type==='find'&&J.st===1)pjLetter(true);}buildVillage();buildTrack();buildSchoolArea();buildBeachGames();buildVillageSign();buildFunfair(add);buildBeach(add);buildFarm(add);buildSouth(add);buildFireTruck();buildPlayground();buildArena();buildSea();buildObby();buildPlot();
+function buildDistricts(add){buildOrto();buildMetroGate();areaWrap('metro',()=>{buildMetro();buildRadura();});areaWrap('mall',buildMall);buildAutodromo();areaWrap('pista',buildPista);areaWrap('egitto',buildEgitto);areaWrap('piramide',buildPiramide);buildBusStop();buildCaaOutside();areaWrap('caa',buildCaa);areaWrap('magia',buildMagia);areaWrap('wlab',buildWlab);buildCivicaOutside();areaWrap('civica',buildCivica);areaWrap('cucina',buildCucina);buildOspedaleOutside();areaWrap('ospedale',buildOspedale);buildAlbertoOutside();ERAS.forEach(E=>areaWrap(E.area,()=>buildEra(E)));buildV33Outside();areaWrap('cinema',buildCinema);areaWrap('arena',buildHeroArena);areaWrap('fantasmi',buildFantasmi);areaWrap('stelle',buildStelle);areaWrap('orbita',buildOrbita);areaWrap('luna',buildLuna);areaWrap('marte',buildMarte);buildV34Outside();buildCoins();areaWrap('torre',buildTorre);areaWrap('creature',buildCreature);areaWrap('plancia',buildPlancia);areaWrap('orologio',buildOrologio);areaWrap('radici',buildRadici);areaWrap('cellula',buildCellula);areaWrap('sogno',buildSogno);areaWrap('cioccolato',buildCioccolato);buildUfficioOutside();areaWrap('ufficio',buildUfficio);addOlga();buildV37Outside();areaWrap('musica',buildMusica);areaWrap('basket',buildBasket);buildV41Outside();areaWrap('brigata',buildBrigata);areaWrap('calma',buildCalma);areaWrap('negozio',buildNegozio);buildV42Outside();areaWrap('cantiere',buildCantiere);buildV43Outside();areaWrap('invictus',buildInvictus);buildV44Outside();areaWrap('episodiarte',buildEpisodiarte);areaWrap('epcastello',buildEpCastello);buildV51();areaWrap('skatepark',buildSkatepark);areaWrap('deejay',buildDeejay);areaWrap('campeggio',buildCampeggio);{const J=S.q&&S.q.pj;if(J&&J.day===S.day&&PJOBS[J.i]&&PJOBS[J.i].type==='find'&&J.st===1)pjLetter(true);}buildVillage();buildTrack();buildSchoolArea();buildBeachGames();buildVillageSign();buildFunfair(add);buildBeach(add);buildFarm(add);buildSouth(add);buildFireTruck();buildPlayground();buildArena();buildSea();buildObby();buildPlot();
   scene.add(flat(6,8.4,lam('#8E8AA8'),-47,.03,10.6));const pT=canvasTex(64,64,(x)=>{x.fillStyle='#4D7FD9';rr(x,4,4,56,56,10);x.fill();x.fillStyle='#fff';x.font='bold 44px sans-serif';x.textAlign='center';x.textBaseline='middle';x.fillText('P',32,35);});
   const ps=new THREE.Mesh(new THREE.PlaneGeometry(1.4,1.4),new THREE.MeshBasicMaterial({map:pT}));ps.position.set(-50.6,2.6,13.6);scene.add(ps);scene.add(box(.12,2,.12,lam('#6B6B80'),-50.6,1,13.55));
   for(let x=-134;x<=96;x+=7)for(let z=-134;z<=134;z+=7){const jx=x+(Math.random()-.5)*4,jz=z+(Math.random()-.5)*4;if(Math.abs(jx)<63&&Math.abs(jz)<63)continue;if(jx>-60&&jx<60&&jz<-74&&jz>-132)continue;if(jx<-76&&jz>-66&&jz<66)continue;if(Math.random()<.5)add(jx,jz);}
@@ -8165,45 +8165,89 @@ function thNext(){const P=THP;if(!P)return;clearTimeout(P.timer);P.wait=false;tr
 {const _x=exitV33;exitV33=function(){if(THP)thStop(false);if(EPP)epStop(false);return _x.apply(this,arguments);};}
 
 /* =================== v4.6 · NUOVI LUOGHI: Skatepark, Scuola di Deejay – Ella Groove, Campeggio =================== */
-Object.assign(ACTN,{skate_park:'Skatepark · Percorso delle stelle',dj_mix:'Scuola di Deejay · Mix',dj_ritmo:'Scuola di Deejay · Gioco del ritmo',dj_lezione:'Scuola di Deejay · Lezione',camp_tenda:'Campeggio · Montare la tenda',camp_falo:'Campeggio · Preparare il falò',camp_mm:'Campeggio · Marshmallow'});
-GROUPS.push(['skate','Skatepark (skateboard, rampe e stelle)','🛹',['skin'],[],[]],['deejay','Scuola di Deejay – Ella Groove (mix e ritmo)','🎧',['djin'],['deejay'],[]],['campeggio','Campeggio (tenda, falò, marshmallow)','⛺',['cpin'],['campeggio'],[]]);
-const SKX={x:-39,z:82},DJX={x:68,z:-131},CPX={x:-14,z:82};
-/* ======================= SKATEPARK (in città) ======================= */
-const SKS=[[-56,82,1.5],[-39,82,.9],[-29,78.5,.55],[-21,84,1.5],[-47,77.6,0],[-33,86.6,0],[-44,86.6,0],[-53.5,84,1.2]];
-let SKP=null;
-function SKST(){S.skate=S.skate||{};S.skate.runs=S.skate.runs|0;return S.skate;}
-function buildSkatepark(){const A=AREAS.city,G=new THREE.Group();scene.add(G);const add=m=>{G.add(m);return m;};KEEPR.push([-60,-18,74,90]);
-  add(flat(40,13,lam('#BFC2CC'),SKX.x,.03,SKX.z));
-  for(let x=-58;x<=-20;x+=2){if(x>-42&&x<-36)continue;add(box(.15,.6,.15,lam('#2B2B33'),x,.3,75.8));}add(box(16,.08,.08,lam('#2B2B33'),-50,.6,75.8));add(box(16,.08,.08,lam('#2B2B33'),-28,.6,75.8));
-  obsBox(A,-58.2,-42,75.6,76);obsBox(A,-36,-19.8,75.6,76);obsBox(A,-58.2,-19.8,88,88.4);obsBox(A,-58.4,-58,75.6,88.4);obsBox(A,-20,-19.6,75.6,88.4);
-  const plat=(x0,x1,z0,z1,top,col)=>{PLATS.push({sk:1,x0,x1,z0,z1,cx:(x0+x1)/2,cz:(z0+z1)/2,w:x1-x0,d:z1-z0,top,bot:0,on:true,o:{},dx:0,dz:0});add(box(x1-x0,top,z1-z0,lam(col||'#9AA0AE'),(x0+x1)/2,top/2,(z0+z1)/2));};
-  /* rampa ovest con terrazza */ plat(-58,-54,78,86,1.5,'#8A90A0');[1.2,.9,.6,.3].forEach((t,i)=>plat(-54+i,-53+i,78,86,t,'#A7ADBB'));
-  /* funbox al centro */ plat(-45,-43.5,79,85,.3);plat(-43.5,-42,79,85,.6);plat(-42,-36,79,85,.9,'#7FA8D6');plat(-36,-34.5,79,85,.6);plat(-34.5,-33,79,85,.3);
-  /* rail */ plat(-32,-26,78.35,78.65,.55,'#E8332F');[-31.5,-26.5].forEach(x=>add(box(.1,.55,.1,lam('#2B2B33'),x,.27,78.5)));
-  /* kicker est */ [.3,.6,.9,1.2].forEach((t,i)=>plat(-26+i,-25+i,81,87,t,'#A7ADBB'));plat(-22,-20,81,87,1.5,'#8A90A0');
-  /* graffiti allegri sulle rampe */ const gt=canvasTex(256,96,(x,w,h)=>{x.fillStyle='#8A90A0';x.fillRect(0,0,w,h);['#FF4FA3','#FFD24A','#35DDEE','#9C6BFF'].forEach((c,i)=>{x.fillStyle=c;x.beginPath();x.arc(30+i*62,48+Math.sin(i)*14,24,0,7);x.fill();});x.fillStyle='#fff';x.font='bold 30px sans-serif';x.textAlign='center';x.fillText('SKATE!',w/2,60);});
-  [[-58.05,1,82,Math.PI/2],[-19.95,1,84,-Math.PI/2]].forEach(([x,y,z,r])=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(6,1.4),new THREE.MeshBasicMaterial({map:gt}));m.position.set(x+(r>0?-.02:.02),y,z);m.rotation.y=-r;add(m);});
-  const sg=new THREE.Mesh(new THREE.PlaneGeometry(7,1.4),new THREE.MeshBasicMaterial({map:signTex('🛹 SKATEPARK','#FF4FA3'),transparent:true,side:THREE.DoubleSide}));sg.position.set(-39,3.2,75.6);add(sg);[-42,-36].forEach(x=>add(box(.2,3.4,.2,lam('#2B2B33'),x,1.7,75.7)));
-  EPM.skStars=SKS.map(([x,z,t],i)=>{const s=emojiSprite('⭐',.9);s.position.set(x,t+1,z);s.visible=false;add(s);return s;});
-  A.inter.push({id:'skin',x:-39,z:74.4,r:2.6,label:()=>SKP?'⏹️ Esci dallo Skatepark':'🛹 Entra nello Skatepark',act:()=>SKP?skEnd(false):skMenu()});
-  SPOTS_MAP.skatepark={name:'Skatepark',emoji:'🛹',area:'city',x:-39,z:73.6};}
-function skMenu(){labPanel('🛹 Skatepark','Rampe, funbox e rail: raccogli le stelle!');const st=SKST();
+Object.assign(ACTN,{skate_park:'Skatepark · Percorso delle stelle',skate_hp:'Skatepark · Half pipe',dj_mix:'Scuola di Deejay · Mix',dj_ritmo:'Scuola di Deejay · Gioco del ritmo',dj_lezione:'Scuola di Deejay · Lezione',camp_tenda:'Campeggio · Montare la tenda',camp_falo:'Campeggio · Preparare il falò',camp_mm:'Campeggio · Marshmallow'});
+GROUPS.push(['skate','Skatepark (half pipe, rampe e stelle)','🛹',['skin'],['skatepark'],[]],['deejay','Scuola di Deejay – Ella Groove (mix e ritmo)','🎧',['djin'],['deejay'],[]],['campeggio','Campeggio (tenda, falò, marshmallow)','⛺',['cpin'],['campeggio'],[]]);
+const DJX={x:68,z:-131},CPX={x:32,z:-46};
+/* ======================= SKATEPARK (luogo a sé, con half pipe) ======================= */
+const SKO=new V3(5200,0,-5200),SKG={x:42,z:12};
+V33A.push('skatepark');V33O.skatepark=SKO;V33L.skatepark='Lo Skatepark';V33B.skatepark=[30,24];V33SPAWN.skatepark=[0,19,Math.PI];V33G.skatepark='skate';V33DOOR.skatepark=[SKG.x,SKG.z-3.4,Math.PI];V34COL.skatepark='#C4C7D0';
+AREAS.skatepark={obs:[],inter:[],taps:[],bounds:{x0:SKO.x-29,x1:SKO.x+29,z0:SKO.z-23,z1:SKO.z+23},cell:1,grid:null,label:'Lo Skatepark'};
+/* stelle del percorso (coordinate locali dell'area): [x, z, altezza della superficie] */
+const SKS=[[-17,6,1.5],[0,6,.9],[10,2.5,.55],[18,8,1.5],[-8,1.6,0],[6,10.6,0],[-5,10.6,0],[-14.5,8,1.2]];
+const HP={R:4,F:3,top:4,z0:-20,z1:-12};
+let SKP=null,HPR=null;
+function SKST(){S.skate=S.skate||{};S.skate.runs=S.skate.runs|0;S.skate.hp=S.skate.hp|0;return S.skate;}
+function hpCurve(ax){const d=ax-HP.F;if(d<=0)return 0;if(d>=HP.R)return HP.top;return HP.R-Math.sqrt(HP.R*HP.R-d*d);}
+function gateSign(add,t,c,x,y,z,w){const tx=signTex(t,c);[0,Math.PI].forEach(r=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(w,w*.2),new THREE.MeshBasicMaterial({map:tx,transparent:true}));m.position.set(x,y,z+(r?-.03:.03));m.rotation.y=r;add(m);});}
+function buildSkateGate(){const A=AREAS.city,G=new THREE.Group();scene.add(G);const add=m=>{G.add(m);return m;};
+  [-2.4,2.4].forEach(dx=>{add(box(.35,3.6,.35,lam('#2B2B33'),SKG.x+dx,1.8,SKG.z));obsBox(A,SKG.x+dx-.3,SKG.x+dx+.3,SKG.z-.3,SKG.z+.3);});
+  gateSign(add,'🛹 SKATEPARK','#FF4FA3',SKG.x,3.3,SKG.z,5.4);const e=emojiSprite('🛹',1.5);e.position.set(SKG.x,4.7,SKG.z);add(e);
+  A.inter.push({id:'skin',x:SKG.x,z:SKG.z-1.8,r:2.6,label:()=>'🛹 Vai allo Skatepark',act:()=>enterV33('skatepark')});SPOTS_MAP.skatepark={name:'Lo Skatepark',emoji:'🛹',area:'city',x:SKG.x,z:SKG.z-2.2};}
+function buildSkatepark(){const k='skatepark',O=SKO,A=AREAS[k],G=new THREE.Group();G.position.copy(O);scene.add(G);const add=m=>{G.add(m);return m;},ob=(x0,x1,z0,z1)=>A.obs.push({t:'b',x0:O.x+x0,x1:O.x+x1,z0:O.z+z0,z1:O.z+z1}),obc=(x,z,r)=>A.obs.push({t:'c',x:O.x+x,z:O.z+z,r});
+  add(flat(70,56,lam('#8FCB72'),0,0,0));add(flat(58,44,lam('#C4C7D0'),0,.02,0));
+  for(let i=0;i<26;i++){const a=i/26*Math.PI*2,x=Math.cos(a)*31,z=Math.sin(a)*25;if(z>20&&Math.abs(x)<5)continue;add(cyl(.3,.4,2.4,lam('#7A5A3A'),x,1.2,z,8));const t=new THREE.Mesh(new THREE.SphereGeometry(1.8,8,6),lam(i%2?'#4FA36B':'#6F9A50'));t.position.set(x,3.4,z);add(t);}
+  const plat=(x0,x1,z0,z1,top,col,vis)=>{PLATS.push({sk:1,x0:O.x+x0,x1:O.x+x1,z0:O.z+z0,z1:O.z+z1,cx:O.x+(x0+x1)/2,cz:O.z+(z0+z1)/2,w:x1-x0,d:z1-z0,top,bot:0,on:true,o:{},dx:0,dz:0});if(vis!==false)add(box(x1-x0,top,z1-z0,lam(col||'#9AA0AE'),(x0+x1)/2,top/2,(z0+z1)/2));};
+  /* ---- HALF PIPE alta ---- */const hz=(HP.z0+HP.z1)/2,hw=HP.z1-HP.z0,mat=lam('#D6D9E2'),edge=lam('#9AA0AE');
+  add(box(HP.F*2,.12,hw,mat,0,.06,hz));const N=12;for(const sgn of [-1,1]){for(let i=0;i<N;i++){const a0=i/N*Math.PI/2,a1=(i+1)/N*Math.PI/2,x0=HP.F+HP.R*Math.sin(a0),y0=HP.R-HP.R*Math.cos(a0),x1=HP.F+HP.R*Math.sin(a1),y1=HP.R-HP.R*Math.cos(a1);
+      const len=Math.hypot(x1-x0,y1-y0),seg=box(len,.18,hw,mat,sgn*(x0+x1)/2,(y0+y1)/2,hz);seg.rotation.z=sgn*Math.atan2(y1-y0,x1-x0);add(seg);}
+    add(box(4,HP.top,hw,edge,sgn*(HP.F+HP.R+2),HP.top/2,hz));const cp=cyl(.12,.12,hw,lam('#E8332F'),sgn*(HP.F+HP.R),HP.top+.05,hz,8);cp.rotation.x=Math.PI/2;add(cp);
+    add(box(4.6,HP.top+1.4,.3,lam('#7A7F8E'),sgn*(HP.F+HP.R+2),(HP.top+1.4)/2,HP.z0-.2));
+    /* gradini lungo la curva: si può anche salire a piedi */const L=HP.F+HP.R;for(let h=.3;h<HP.top-.01;h=Math.round((h+.3)*10)/10){let d=0;while(hpCurve(HP.F+d)<h&&d<HP.R)d+=.05;const xa=HP.F+d;if(sgn>0)plat(xa,L,HP.z0,HP.z1,h,null,false);else plat(-L,-xa,HP.z0,HP.z1,h,null,false);}
+    if(sgn>0)plat(L,L+4,HP.z0,HP.z1,HP.top,null,false);else plat(-L-4,-L,HP.z0,HP.z1,HP.top,null,false);}
+  ob(-11.5,11.5,HP.z0-.6,HP.z0-.1);
+  const hps=new THREE.Mesh(new THREE.PlaneGeometry(10,1.6),new THREE.MeshBasicMaterial({map:signTex('🛹 HALF PIPE','#2B6FD6'),transparent:true}));hps.position.set(0,HP.top+2.4,HP.z0-.1);add(hps);
+  EPM.hpStars=[[-1,0],[1,0],[-1,1],[1,1]].map(([s,hi])=>{const st=emojiSprite('⭐',1);st.position.set(s*(HP.F+HP.R-.1),HP.top+1.4+hi*1.1,hz);st.visible=false;add(st);return st;});
+  A.inter.push({id:'skhp',x:O.x,z:O.z+HP.z1+1.6,r:2.8,label:()=>'🛹 Prova l’half pipe',act:hpMenu});
+  /* ---- percorso con rampe, funbox e rail ---- */
+  plat(-21,-17,2,10,1.5,'#8A90A0');[1.2,.9,.6,.3].forEach((t,i)=>plat(-17+i,-16+i,2,10,t,'#A7ADBB'));
+  plat(-6,-4.5,3,9,.3);plat(-4.5,-3,3,9,.6);plat(-3,3,3,9,.9,'#7FA8D6');plat(3,4.5,3,9,.6);plat(4.5,6,3,9,.3);
+  plat(7,13,2.35,2.65,.55,'#E8332F');[7.5,12.5].forEach(x=>add(box(.1,.55,.1,lam('#2B2B33'),x,.27,2.5)));
+  [.3,.6,.9,1.2].forEach((t,i)=>plat(13+i,14+i,5,11,t,'#A7ADBB'));plat(17,21,5,11,1.5,'#8A90A0');
+  const gt=canvasTex(256,96,(x,w,h)=>{x.fillStyle='#8A90A0';x.fillRect(0,0,w,h);['#FF4FA3','#FFD24A','#35DDEE','#9C6BFF'].forEach((c,i)=>{x.fillStyle=c;x.beginPath();x.arc(30+i*62,48+Math.sin(i)*14,24,0,7);x.fill();});x.fillStyle='#fff';x.font='bold 30px sans-serif';x.textAlign='center';x.fillText('SKATE!',w/2,60);});
+  [[-21.05,6,Math.PI/2],[21.05,8,-Math.PI/2]].forEach(([x,z,r])=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(6,1.4),new THREE.MeshBasicMaterial({map:gt}));m.position.set(x,1,z);m.rotation.y=-r;add(m);});
+  EPM.skStars=SKS.map(([x,z,t])=>{const s=emojiSprite('⭐',.9);s.position.set(x,t+1,z);s.visible=false;add(s);return s;});
+  A.inter.push({id:'skrun',x:O.x,z:O.z+13.5,r:2.6,label:()=>SKP?'⏹️ Ferma il percorso':'⭐ Percorso delle stelle',act:()=>SKP?skEnd(false):skMenu()});
+  [[-12,16],[12,16]].forEach(([x,z])=>{add(box(3,.5,.8,lam('#8A5A3B'),x,.45,z));ob(x-1.5,x+1.5,z-.4,z+.4);});
+  v33Npc(k,'Lo skater del parco','🛹',-9,15,{hair:'ciuffo',hairColor:'nero',skin:SKINS[2]||SKINS[0]},av=>av.g.add(box(1.12,1.06,.6,lam('#FF4FA3'),0,1.5,0)),['Nell’half pipe si va avanti e indietro: ogni spinta ti porta più in alto!','Il casco e le protezioni si mettono sempre.','Cadere fa parte dello skate: ci si rialza e si riprova.','Sul rail si sale piano e si tiene l’equilibrio.'],Math.PI);
+  A.inter.push({id:'skout',x:O.x,z:O.z+21.5,r:2.4,label:()=>'🚌 Torna in città',act:()=>exitV33()});const bs=emojiSprite('🚌',1.4);bs.position.set(0,2.2,22.6);add(bs);}
+V33ENTER.skatepark=()=>{setPlace('Lo Skatepark');setTimeout(()=>say('Benvenuta allo Skatepark! C’è la grande half pipe e il percorso delle stelle con rampe, funbox e rail.'),700);};
+function skMenu(){labPanel('⭐ Il percorso delle stelle','Rampe, funbox e rail: raccogli le stelle!');const st=SKST();
   updateBody(`<p class="tm-q">Sali sullo skateboard e raccogli le 8 stelle: sono sulle rampe, sul funbox e sul rail. Il tasto 🌀 fa un trucco!</p><div class="tm-line">
    <button class="tm-era" data-m="1"><span class="tm-emo">🛹</span><span class="tm-txt"><b>Guido io</b><small>Con la levetta e il tasto Salta</small></span></button>
-   <button class="tm-era" data-m="2"><span class="tm-emo">🤖</span><span class="tm-txt"><b>Guida automatica</b><small>Lo skateboard va da solo da una stella all’altra: tu fai i trucchi</small></span></button></div><p class="hint">Giri fatti: ${st.runs}. Nessuna gara e nessun tempo.</p>`,
+   <button class="tm-era" data-m="2"><span class="tm-emo">🤖</span><span class="tm-txt"><b>Guida automatica</b><small>Lo skateboard va da solo da una stella all’altra: tu fai i trucchi</small></span></button></div><p class="hint">Percorsi completati: ${st.runs}. Nessuna gara e nessun tempo.</p>`,
    p=>p.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{click();skStart(b.dataset.m==='2');}));}
-function skStart(auto){closePanel(false);const st=SKST();SKP={auto,got:new Set(),tricks:0,prevWheel:S.wheel||'piedi',route:auto?SKS.map((s,i)=>i):null,ri:0,spin:0};setWheel('skate',true);actStart('skate_park');if(auto&&ACT)ACT.help++;
-  EPM.skStars.forEach(s=>s.visible=true);placeEmma(-39,77.2,Math.PI);emma.y=0;snapCam();skHud();say(auto?'Si parte! Lo skateboard va da solo: quando vuoi, tocca Trucco!':'Si parte! Sali sulle rampe e raccogli le stelle. Il tasto Trucco fa una giravolta.');}
+function skStart(auto){closePanel(false);SKP={auto,got:new Set(),tricks:0,prevWheel:S.wheel||'piedi',spin:0};setWheel('skate',true);actStart('skate_park');if(auto&&ACT)ACT.help++;
+  EPM.skStars.forEach(s=>s.visible=true);placeEmma(SKO.x,SKO.z+12.5,Math.PI);emma.y=0;snapCam();skHud();say(auto?'Si parte! Lo skateboard va da solo: quando vuoi, tocca Trucco!':'Si parte! Sali sulle rampe e raccogli le stelle. Il tasto Trucco fa una giravolta.');}
 function skHud(){let h=$('#skHud');if(!h){h=document.createElement('div');h.id='skHud';h.className='sk-hud';$('#app').appendChild(h);}if(!SKP){h.hidden=true;return;}h.hidden=false;
   h.innerHTML=`<b>⭐ ${SKP.got.size} di 8</b><button class="big pink" id="skT">🌀 Trucco!</button><button class="big cyan" id="skA">${SKP.auto?'✋ Guido io':'🤖 Guida automatica'}</button><button class="big off" id="skX">⏹️ Fine</button>`;
   h.querySelector('#skT').onclick=()=>{click();skTrick();};h.querySelector('#skA').onclick=()=>{click();SKP.auto=!SKP.auto;if(SKP.auto&&ACT)ACT.help++;say(SKP.auto?'Guida automatica.':'Guidi tu!');skHud();};h.querySelector('#skX').onclick=()=>{click();skEnd(false);};}
 function skTrick(){if(!SKP)return;if(emma.grounded){emma.vy=10.5;emma.grounded=false;emma.coyote=0;}SKP.spin=.75;SKP.tricks++;tone(660,.08,'triangle',.07);tone(990,.1,'triangle',.06,.12);if(SKP.tricks%3===1)say(pick(['Che giravolta!','Un trucco perfetto!','Wow, che salto!','Sei un vero skater!']));}
-function skEnd(ok){if(!SKP)return;const s=SKP;SKP=null;EPM.skStars.forEach(x=>x.visible=false);skHud();setWheel(s.prevWheel==='skate'?'skate':s.prevWheel,true);if(ACT&&ACT.a==='skate_park')actEnd(ok);if(ok){const st=SKST();st.runs++;save();showReward('🛹','Tutte le stelle dello skatepark!',`${s.tricks} trucchi fatti. Puoi rifarlo quando vuoi.`);}else say('Alla prossima, skater!');}
-function skTick(dt){if(!SKP)return;if(area!=='city'){skEnd(false);return;}const sk=SKP;
+function skEnd(ok){if(!SKP)return;const s=SKP;SKP=null;EPM.skStars.forEach(x=>x.visible=false);skHud();setWheel(s.prevWheel,true);if(ACT&&ACT.a==='skate_park')actEnd(ok);if(ok){const st=SKST();st.runs++;save();showReward('🛹','Tutte le stelle dello skatepark!',`${s.tricks} trucchi fatti. Puoi rifarlo quando vuoi.`);}else say('Alla prossima, skater!');}
+function skTick(dt){if(!SKP)return;if(area!=='skatepark'){skEnd(false);return;}const sk=SKP,O=SKO;
   if(sk.spin>0){sk.spin-=dt;emma.root.rotation.y+=dt*Math.PI*2/.75;}
-  SKS.forEach(([x,z,t],i)=>{if(sk.got.has(i))return;if(Math.hypot(emma.pos.x-x,emma.pos.z-z)<1.3&&Math.abs((emma.y||0)-t)<.9){sk.got.add(i);EPM.skStars[i].visible=false;burst(new V3(x,t+1,z),sparkTex,calmOn()?5:12,1.5,2);tone(880,.12,'sine',.08);tone(1175,.12,'sine',.07,.08);skHud();if(sk.got.size<8)say(pick(['Stella!','Presa!','Un’altra stella!']));}});
+  SKS.forEach(([x,z,t],i)=>{if(sk.got.has(i))return;if(Math.hypot(emma.pos.x-O.x-x,emma.pos.z-O.z-z)<1.3&&Math.abs((emma.y||0)-t)<.9){sk.got.add(i);EPM.skStars[i].visible=false;burst(new V3(O.x+x,t+1,O.z+z),sparkTex,calmOn()?5:12,1.5,2);tone(880,.12,'sine',.08);tone(1175,.12,'sine',.07,.08);skHud();if(sk.got.size<8)say(pick(['Stella!','Presa!','Un’altra stella!']));}});
   if(sk.got.size>=8){skEnd(true);return;}
-  if(sk.auto&&mode==='world'&&!anyModal()){let i=SKS.findIndex((s,k)=>!sk.got.has(k));const [x,z,t]=SKS[i];const dx=x-emma.pos.x,dz=z-emma.pos.z,d=Math.hypot(dx,dz);if(sk.li!==i){sk.li=i;sk.bd=d;sk.st=0;}if(d<sk.bd-.3){sk.bd=d;sk.st=0;}else{sk.st=(sk.st||0)+dt;if(sk.st>4){sk.st=0;placeEmma(x,z,emma.root.rotation.y);emma.y=t;emma.vy=0;}}if(d>.3){const v=Math.min(d,6*dt);emma.pos.x+=dx/d*v;emma.pos.z+=dz/d*v;emma.root.position.x=emma.pos.x;emma.root.position.z=emma.pos.z;if(sk.spin<=0)emma.root.rotation.y=Math.atan2(dx,dz);}}}
+  if(sk.auto&&mode==='world'&&!anyModal()){const i=SKS.findIndex((s,k)=>!sk.got.has(k));const [lx,lz,t]=SKS[i],x=O.x+lx,z=O.z+lz;const dx=x-emma.pos.x,dz=z-emma.pos.z,d=Math.hypot(dx,dz);if(sk.li!==i){sk.li=i;sk.bd=d;sk.st=0;}if(d<sk.bd-.3){sk.bd=d;sk.st=0;}else{sk.st=(sk.st||0)+dt;if(sk.st>4){sk.st=0;placeEmma(x,z,emma.root.rotation.y);emma.y=t;emma.vy=0;}}
+    if(d>.3){const v=Math.min(d,6*dt);emma.pos.x+=dx/d*v;emma.pos.z+=dz/d*v;emma.root.position.x=emma.pos.x;emma.root.position.z=emma.pos.z;if(sk.spin<=0)emma.root.rotation.y=Math.atan2(dx,dz);}}}
+/* ---- la corsa nell'half pipe: avanti e indietro, sempre più in alto ---- */
+function hpMenu(){labPanel('🛹 La half pipe','Avanti e indietro, sempre più in alto!');updateBody(`<p class="tm-q">Nella half pipe lo skateboard va avanti e indietro. Ogni spinta ti porta più in alto: quando esci sopra il bordo sei in aria e puoi fare un trucco! Prendi le 4 stelle sopra i bordi.</p><div class="tm-line">
+   <button class="tm-era" data-m="1"><span class="tm-emo">💪</span><span class="tm-txt"><b>Spingo io</b><small>Tocca «Spingi» per andare più in alto</small></span></button>
+   <button class="tm-era" data-m="2"><span class="tm-emo">🤖</span><span class="tm-txt"><b>Spinta automatica</b><small>Sali da sola: tu fai i trucchi quando sei in aria</small></span></button></div><p class="hint">Casco e protezioni sempre! Nessun tempo e nessuna gara.</p>`,p=>p.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{click();hpStart(b.dataset.m==='2');}));}
+function hpStart(auto){closePanel(false);HPR={auto,ph:0,A:2.2,spin:0,tricks:0,got:new Set(),air:false,prevWheel:S.wheel||'piedi',t:0,pushT:0};setWheel('skate',true);setMode('halfpipe');actStart('skate_hp');if(auto&&ACT)ACT.help++;EPM.hpStars.forEach(s=>s.visible=true);
+  let h=$('#hpHud');if(!h){h=document.createElement('div');h.id='hpHud';h.className='sk-hud';$('#app').appendChild(h);}h.hidden=false;hpHudR();say(auto?'Si va! Lo skateboard prende velocità da solo. Quando sei in aria, tocca Trucco!':'Tocca Spingi per andare sempre più in alto. In aria, tocca Trucco!');}
+function hpHudR(){const h=$('#hpHud');if(!h||!HPR)return;h.innerHTML=`<b>⭐ ${HPR.got.size} di 4</b>${HPR.auto?'':'<button class="big gold" id="hpP">💪 Spingi</button>'}<button class="big pink" id="hpT">🌀 Trucco!</button><button class="big off" id="hpX">⏹️ Fine</button>`;
+  const p=h.querySelector('#hpP');if(p)p.onclick=()=>{click();hpPush();};h.querySelector('#hpT').onclick=()=>{click();hpTrick();};h.querySelector('#hpX').onclick=()=>{click();hpEnd(false);};}
+function hpPush(){if(!HPR)return;HPR.A=Math.min(HP.F+HP.R+1.7,HPR.A+.7);tone(220,.08,'triangle',.06);}
+function hpTrick(){if(!HPR)return;if(!HPR.air){say('Aspetta di essere in aria, sopra il bordo!');return;}if(HPR.spin>0)return;HPR.spin=.8;HPR.tricks++;tone(660,.08,'triangle',.07);tone(990,.1,'triangle',.06,.12);say(pick(['Giravolta in aria!','Che trucco!','Wow, che volo!']));}
+function hpEnd(ok){if(!HPR)return;const R=HPR;HPR=null;EPM.hpStars.forEach(s=>s.visible=false);const h=$('#hpHud');if(h)h.hidden=true;setMode('world');setWheel(R.prevWheel,true);placeEmma(SKO.x,SKO.z+HP.z1+1.8,Math.PI);emma.y=0;snapCam();if(ACT&&ACT.a==='skate_hp')actEnd(ok);
+  if(ok){const st=SKST();st.hp++;save();showReward('🛹','Re e regina della half pipe!',`Hai preso le 4 stelle in aria e fatto ${R.tricks} trucch${R.tricks===1?'o':'i'}.`);}}
+function hpTick(dt){const R=HPR;if(!R)return;if(area!=='skatepark'){hpEnd(false);return;}R.t+=dt;const maxA=HP.F+HP.R+1.7;if(R.auto){R.pushT-=dt;if(R.pushT<=0){R.pushT=1.6;R.A=Math.min(maxA,R.A+.55);}}else R.A=Math.max(2.2,R.A-dt*.05);
+  R.ph+=dt*(calmOn()?1.6:2.1);const s=Math.sin(R.ph)*R.A,lim=HP.F+HP.R,ax=Math.abs(s),hz=(HP.z0+HP.z1)/2;let x,y;if(ax<=lim-.05){x=s;y=hpCurve(ax);R.air=false;}else{x=Math.sign(s)*(lim-.15);y=HP.top+(ax-lim)*1.5;R.air=true;}
+  emma.pos.set(SKO.x+x,0,SKO.z+hz);emma.root.position.set(SKO.x+x,y,SKO.z+hz);emma.y=y;const vel=Math.cos(R.ph);if(R.spin>0){R.spin-=dt;emma.root.rotation.y+=dt*Math.PI*2/.8;}else emma.root.rotation.y=vel>0?Math.PI/2:-Math.PI/2;
+  const slope=ax>HP.F&&!R.air?Math.atan2(hpCurve(ax+.05)-hpCurve(ax-.05),.1):0;emma.root.rotation.z=R.air?0:-Math.sign(s)*slope*.8*(vel>0?1:-1)*0;
+  EPM.hpStars.forEach((st,i)=>{if(R.got.has(i)||!st.visible)return;const sx=st.position.x,sy=st.position.y;if(Math.abs(x-sx)<.9&&Math.abs(y+1-sy)<.8){R.got.add(i);st.visible=false;burst(new V3(SKO.x+sx,sy,SKO.z+hz),sparkTex,calmOn()?5:12,1.5,2);tone(880,.12,'sine',.08);tone(1175,.12,'sine',.07,.08);hpHudR();}});
+  if(R.got.size>=4&&!R.done){R.done=true;setTimeout(()=>hpEnd(true),1200);}}
+{const _ct=camTarget;camTarget=function(){if(mode==='halfpipe'){const hz=(HP.z0+HP.z1)/2;return {p:new V3(SKO.x,5.5,SKO.z+hz+15),l:new V3(SKO.x,2.6,SKO.z+hz)};}return _ct.apply(this,arguments);};}
 /* ======================= SCUOLA DI DEEJAY – ELLA GROOVE ======================= */
 const DJO=new V3(-2400,0,9000);
 V33A.push('deejay');V33O.deejay=DJO;V33L.deejay='Scuola di Deejay – Ella Groove';V33B.deejay=[12,9];V33SPAWN.deejay=[0,7,Math.PI];V33G.deejay='deejay';V33DOOR.deejay=[DJX.x+7.4,DJX.z,Math.PI/2];V34COL.deejay='#2A1E4A';V33SKY.deejay=['#140F2A',1,.5];
@@ -8257,15 +8301,15 @@ function updDJ(dt,t){if(area!=='deejay'){if(DJ)djStop();return;}DJM.discs.forEac
 {const _x=exitV33;exitV33=function(){if(area==='deejay')djStop();return _x.apply(this,arguments);};}
 /* ======================= CAMPEGGIO ======================= */
 const CPO=new V3(5200,0,5200);
-V33A.push('campeggio');V33O.campeggio=CPO;V33L.campeggio='Il Campeggio';V33B.campeggio=[30,22];V33SPAWN.campeggio=[0,17,Math.PI];V33G.campeggio='campeggio';V33DOOR.campeggio=[CPX.x,CPX.z-3.4,Math.PI];V34COL.campeggio='#8FCB72';
+V33A.push('campeggio');V33O.campeggio=CPO;V33L.campeggio='Il Campeggio';V33B.campeggio=[30,22];V33SPAWN.campeggio=[0,17,Math.PI];V33G.campeggio='campeggio';V33DOOR.campeggio=[CPX.x,CPX.z+3.4,0];V34COL.campeggio='#8FCB72';
 AREAS.campeggio={obs:[],inter:[],taps:[],bounds:{x0:CPO.x-29,x1:CPO.x+29,z0:CPO.z-21,z1:CPO.z+21},cell:1,grid:null,label:'Il Campeggio'};
 const CPM={tent:null,parts:{},stakes:[],sticks:[],fire:null,flames:[],pile:null,bucket:null};
 function CPS(){S.camp=S.camp||{};const c=S.camp;c.mm=c.mm|0;return c;}
 let CP={tentStep:0,stakes:{},sticks:{},pile:false,bucket:false,fire:false};
-function buildCampOutside(){const A=AREAS.city,G=new THREE.Group();scene.add(G);const add=m=>{G.add(m);return m;};KEEPR.push([-18,-10,78,86]);
-  [-16.4,-11.6].forEach(x=>{add(cyl(.18,.22,3.4,lam('#7A5A3A'),x,1.7,82,8));obsBox(A,x-.25,x+.25,81.75,82.25);});add(box(5.4,.35,.3,lam('#8A5A3B'),-14,3.4,82));
-  const sg=new THREE.Mesh(new THREE.PlaneGeometry(4.6,.9),new THREE.MeshBasicMaterial({map:signTex('⛺ CAMPEGGIO','#4FA36B'),transparent:true,side:THREE.DoubleSide}));sg.position.set(-14,2.8,82.05);add(sg);const t=emojiSprite('⛺',1.6);t.position.set(-14,4.5,82);add(t);
-  A.inter.push({id:'cpin',x:CPX.x,z:CPX.z-1.6,r:2.6,label:()=>'⛺ Vai al Campeggio',act:()=>enterV33('campeggio')});SPOTS_MAP.campeggio={name:'Il Campeggio',emoji:'⛺',area:'city',x:CPX.x,z:CPX.z-2};}
+function buildCampOutside(){const A=AREAS.city,G=new THREE.Group();scene.add(G);const add=m=>{G.add(m);return m;};const X=CPX.x,Z=CPX.z;
+  [X-2.4,X+2.4].forEach(x=>{add(cyl(.18,.22,3.4,lam('#7A5A3A'),x,1.7,Z,8));obsBox(A,x-.25,x+.25,Z-.25,Z+.25);});add(box(5.4,.35,.3,lam('#8A5A3B'),X,3.4,Z));
+  gateSign(add,'⛺ CAMPEGGIO','#4FA36B',X,2.8,Z,4.6);const t=emojiSprite('⛺',1.6);t.position.set(X,4.5,Z);add(t);
+  A.inter.push({id:'cpin',x:CPX.x,z:CPX.z+1.8,r:2.6,label:()=>'⛺ Vai al Campeggio',act:()=>enterV33('campeggio')});SPOTS_MAP.campeggio={name:'Il Campeggio',emoji:'⛺',area:'city',x:CPX.x,z:CPX.z+2.2};}
 function buildCampeggio(){const k='campeggio',O=CPO,A=AREAS[k],G=new THREE.Group();G.position.copy(O);scene.add(G);const add=m=>{G.add(m);return m;},ob=(x0,x1,z0,z1)=>A.obs.push({t:'b',x0:O.x+x0,x1:O.x+x1,z0:O.z+z0,z1:O.z+z1}),obc=(x,z,r)=>A.obs.push({t:'c',x:O.x+x,z:O.z+z,r});
   add(flat(64,48,lam('#8FCB72'),0,0,0));add(flat(6,30,lam('#C9A86A'),0,.02,6));
   for(let i=0;i<34;i++){const a=i/34*Math.PI*2,R=24+Math.sin(i*3)*2.5,x=Math.cos(a)*R*1.15,z=Math.sin(a)*R*.85;if(z>14&&Math.abs(x)<5)continue;add(cyl(.35,.45,2.6,lam('#7A5A3A'),x,1.3,z,8));const c=new THREE.Mesh(new THREE.ConeGeometry(2,4.2,8),lam(i%2?'#3E8A57':'#4FA36B'));c.position.set(x,4.4,z);add(c);obc(x,z,.6);}
@@ -8324,10 +8368,10 @@ function cpMarsh(){labPanel('🍡 Cuociamo i marshmallow','Tieni il marshmallow 
      heat=0;N.textContent=`Marshmallow cotti: ${done} di ${need}`;upd();if(done>=need){clearInterval(iv);if(ACT&&ACT.a==='camp_mm')actEnd(true);setTimeout(()=>{closePanel(false);showReward('🍡','Marshmallow per tutti!','Hai cotto tre marshmallow al falò del campeggio.');},700);}};upd();});}
 function updCamp(dt,t){if(area!=='campeggio')return;if(CP.fire)CPM.flames.forEach((f,i)=>{const k=calmOn()?.04:.15;f.scale.set(1+Math.sin(t*9+i)*k,1+Math.sin(t*7+i*2)*k*1.6,1+Math.cos(t*8+i)*k);});CPM.stakes.forEach(s=>{if(s.glow.visible)s.glow.scale.setScalar(1+Math.sin(t*4)*.12);});
   if(!calmOn()&&Math.random()<dt*.25)tone(4200+Math.random()*600,.04,'sine',.012);}
-function buildV51(){buildSkatepark();buildDeejayOutside();buildCampOutside();}
-function updV51(dt,t){skTick(dt);updDJ(dt,t);updCamp(dt,t);}
+function buildV51(){buildSkateGate();buildDeejayOutside();buildCampOutside();}
+function updV51(dt,t){skTick(dt);hpTick(dt);updDJ(dt,t);updCamp(dt,t);}
 
-{const _z=zoneName;zoneName=function(){const x=emma.pos.x,z=emma.pos.z;if(area==='city'){if(x>-59&&x<-19&&z>74&&z<89)return 'Skatepark';if(x>-18&&x<-10&&z>76&&z<87)return 'Verso il Campeggio';if(x>62&&x<78&&z>-138&&z<-124)return 'Scuola di Deejay – Ella Groove';}return _z.apply(this,arguments);};}
+{const _z=zoneName;zoneName=function(){const x=emma.pos.x,z=emma.pos.z;if(area==='city'){if(Math.hypot(x-SKG.x,z-SKG.z)<4)return 'Verso lo Skatepark';if(Math.hypot(x-CPX.x,z-CPX.z)<4)return 'Verso il Campeggio';if(x>62&&x<78&&z>-138&&z<-124)return 'Scuola di Deejay – Ella Groove';}return _z.apply(this,arguments);};}
 
 function buildCity(){
   const A=AREAS.city;
@@ -9310,7 +9354,7 @@ function drawMini(){if(area==='pista'){drawMiniPista();return;}if(area==='metro'
   x.fillStyle='#FF4FA3';x.strokeStyle='#fff';x.lineWidth=2.5;x.beginPath();x.arc(W/2,W/2,5.5,0,7);x.fill();x.stroke();}
 function openMap(){const c=$('#bigMap'),x=c.getContext('2d');x.drawImage(mapBase,0,0);x.textAlign='center';x.textBaseline='middle';const EF='"Noto Color Emoji","Apple Color Emoji",sans-serif';
   x.font='13px "Lilita One",sans-serif';x.lineWidth=4;x.strokeStyle='#fff';x.fillStyle='#2A0F3A';
-  [['Luna Park',0,-131],['Fattoria',-108,-68],['Spiaggia',112,-70],['Quartiere del Sole',0,128],['Centro',-30,22],['Autodromo',86,-108],['Orto',-47,-38],['Metro',68,-124],['Bus Scavi',88,-134],['CAA',-83,30],['Civica',11,73],['Cucina',24.5,73],['Ambulatorio',60,73],['Alberto',22,41.5],['Cinema',-87,-58],['Arena eroi',-87,31],['Fantasmi',-112,62],['Stelle',104,-110],['Torre',26,-128],['Cioccolato',-40,-128],['Ufficio',-25,-89],['Musica',26,-89],['Basket',12,-108],['Brigata',45,-123],['Negozio',45,-85],['Cantiere',1,-41],['Giardino',-45,-108],['Invictus',110,58],['EpisodiARTE',103,120],['Skate',-46,91],['Campeggio',-12,95],['Deejay',70,-120]].forEach(([t,lx,lz])=>{x.strokeText(t,MX(lx),MX(lz));x.fillText(t,MX(lx),MX(lz));});
+  [['Luna Park',0,-131],['Fattoria',-108,-68],['Spiaggia',112,-70],['Quartiere del Sole',0,128],['Centro',-30,22],['Autodromo',86,-108],['Orto',-47,-38],['Metro',68,-124],['Bus Scavi',88,-134],['CAA',-83,30],['Civica',11,73],['Cucina',24.5,73],['Ambulatorio',60,73],['Alberto',22,41.5],['Cinema',-87,-58],['Arena eroi',-87,31],['Fantasmi',-112,62],['Stelle',104,-110],['Torre',26,-128],['Cioccolato',-40,-128],['Ufficio',-25,-89],['Musica',26,-89],['Basket',12,-108],['Brigata',45,-123],['Negozio',45,-85],['Cantiere',1,-41],['Giardino',-45,-108],['Invictus',110,58],['EpisodiARTE',103,120],['Skate',42,18],['Campeggio',32,-40],['Deejay',70,-120]].forEach(([t,lx,lz])=>{x.strokeText(t,MX(lx),MX(lz));x.fillText(t,MX(lx),MX(lz));});
   x.font=`18px ${EF}`;Object.values(PLACES).forEach(p=>{const f=rowFront(p.row);x.fillText(p.emoji,MX(p.x),MX(f-(p.d||12)/2));});
   Object.values(SPOTS_MAP).forEach(s=>x.fillText(s.emoji,MX(s.x),MX(s.z)-10));
   if(!car.driving)x.fillText('🚗',MX(car.pos.x),MX(car.pos.z));
